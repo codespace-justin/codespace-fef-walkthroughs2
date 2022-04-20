@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue Directives</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="./src/js/app.js" defer></script>
+        <link rel="stylesheet" href="./src/css/theme.css">
+    </head>
+    
+    <body>
+    
+        <!-- 
+            #directive-app as template for 
+            const directiveApp object 
+        -->
+        <div id="directive-app">
+
+            <h2> {{title}} </h2>
+
+            <p>
+                {{definition}}
+            </p>
+
+            <p>
+                {{summary}}
+            </p>
+
+            <!-- grey area - display directive table -->
+            <section class="directive-table"> 
+            
+                <!-- list for directives -->
+                <ul>
+                    <li class="row" v-for="directive in commonDirectives">{{directive}}</li>
+                </ul>
+        
+                <!-- list for uses and definitions -->
+                <ul>
+                    <li class="row" v-for="useCase in directiveDefinitions">{{useCase}}</li>
+                </ul>
+            
+            </section>
+
+        </div>
+
+    </body>
+
+</html>

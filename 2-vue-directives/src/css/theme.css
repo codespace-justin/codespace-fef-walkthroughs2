@@ -1,0 +1,26 @@
+body {
+    font-size: 1.2rem;
+    background-color: rgb(0, 185, 108);
+}
+
+#directive-app {
+    padding: 4rem;
+    margin: 6vh 4vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.directive-table {
+    display: flex;
+
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 235);
+    border-radius: 7px;
+}
+
+.row {
+    padding: 1rem;
+    margin: 1.25rem 0;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 7px;
+}
