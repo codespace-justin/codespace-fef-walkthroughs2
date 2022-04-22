@@ -5,6 +5,7 @@ const landing = new Vue({
 
     //  Memebers - Variables
     data : {
+            
         test : 'hello',
 
         greeted : false,
@@ -32,6 +33,7 @@ const landing = new Vue({
             number : '',
             points : 0
         }
+        
     },
 
     // Functions of an object
@@ -43,7 +45,7 @@ const landing = new Vue({
 
         createNewDriver() {
 
-             
+            // Check if array of drivers exists            
             if(!localStorage.getItem("vrl-app-key")) {
 
                 let driversList = []
@@ -52,6 +54,7 @@ const landing = new Vue({
                 localStorage.setItem("vrl-app-key", JSON.stringify(driversList))
                 console.log('not working')
             
+                
             } else {
                 
                 let driversList = JSON.parse( localStorage.getItem("vrl-app-key") )
